@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //normal function  
+
+        //     function addition() {
+        //         console.log("This is normal function ");
+        //         console.log(10 + 20);
+
+        //     }
+        //     addition()
+
+        //     // function with parameters 
+        //     function display(name, age, role) {
+        //         console.log(name, age, role);
+        //     }
+
+        //     display('sai', 25, 'developer')
+        //     display('ravi', 22, 'front end developer')
+        //     display('teja', 25, 'backend developer')
+
+
+        //     // function with return type
+        //     function additionOfTwoNumbers(a, b) {
+
+        //         let addition = a + b;
+        //         return addition;
+
+        //     }
+
+        //     console.log(additionOfTwoNumbers(10 , 20));
+        //     console.log(additionOfTwoNumbers(50 , 20));
+
+
+
+        //     // arrow function
+        //     let arr=()=>{
+        //         console.log("This is arrow function");
+        //     }
+
+        //     arr();
+
+
+
+        //     let arr1=(name, role , address)=>{
+        //         console.log(name, role , address);
+
+        //         return "IBM Company"
+        //     }
+
+        //   console.log( arr1('ramu','RPA Developer','Hyderabad'));
+
+
+
+
+
+        //higher order functions 
+        function homePage(register, login) {
+            console.log("This is home page function");
+
+        }
+
+        //callback functions
+        function loginPage() {
+            console.log("This is login page function");
+        }
+        function RegisterPage() {
+            console.log("This is Register page function");
+        }
+
+
+        homePage(RegisterPage(), loginPage())
+
+
+        console.log(this);
+
+
+        let arr=[10,20,30,40]
+
+        console.table(arr)
+        console.error(
+"error"
+        );
+        
+
+
+
+    </script>
+
+</body>
+
+</html>
