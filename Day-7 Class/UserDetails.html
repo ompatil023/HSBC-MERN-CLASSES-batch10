@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main-container {
+            /* background-color: salmon; */
+            margin: 10px;
+            padding: 20px;
+        }
+
+        img {
+            height: 150px;
+            width: ;
+            : 150px;
+        }
+
+        .container {
+            display: flex;
+            height: 90px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 10px;
+            margin: 10px;
+            background-color: salmon;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <button onclick="changeColor()">Click To change colors </button>
+        <button id="btn">Click To Generate Random OTP </button>
+
+
+    </div>
+    <h2></h2>
+    <div id="main-container">
+
+    </div>
+    <script>
+        function changeColor() {
+            let colorCode = Math.floor(Math.random() * 1000000);
+            document.querySelector("body").style.backgroundColor = `#${colorCode}`
+        }
+
+
+        //logic to generate otp
+        let btn = document.getElementById('btn')
+        btn.addEventListener('click', () => {
+
+            document.querySelector('h2').innerText = `Generated OTP : ${Math.floor(Math.random() * 1000000)}`
+        })
+
+
+        let api = "https://api.github.com/users"
+        let mainContainer = document.getElementById("main-container")
+        window.fetch(api).then((res) => res.json()).then((data) => {
+            data.forEach((user) => {
+
+                let login = document.createElement("h1")
+                let type = document.createElement("h1")
+                let image = document.createElement("img")
+                let div = document.createElement("div")
+                let subDiv = document.createElement("div")
+
+
+                login.innerText = `Username : ${user.login}`
+                type.innerText = `User Type :${user.type}`
+                image.src = `${user.avatar_url}`
+                subDiv.appendChild(div)
+                subDiv.appendChild(image)
+                mainContainer.appendChild(subDiv)
+
+                subDiv.style.display = "flex"
+                subDiv.style.justifyContent = 'space-evenly'
+                subDiv.style.margin = '10px'
+                subDiv.style.padding = '10px'
+                subDiv.style.backgroundColor = 'gray'
+                div.appendChild(login)
+                div.appendChild(type)
+            })
+        }).catch((err) => {
+            console.log(err);
+
+        })
+    </script>
+</body>
+
+</html>

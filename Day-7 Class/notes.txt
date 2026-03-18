@@ -1,0 +1,185 @@
+
+    1. Primitive Data types (immutable in nature)
+            1. number 
+            2. string 
+            3. boolean 
+            4. null 
+            5. bigInt 
+            6. undefine 
+            7. symbol
+
+
+            2. string : 
+                ->Group of characters is called as string
+                ->In Js We can declare string 3 different ways : 
+                    1. "" 
+                    2. '' 
+                    3. `` -> string template ( string enterpulation)
+
+                String Inbuilt Methods/ Functions: 
+                -----------------------------------
+                    1. trip()
+                    2. tripStart()
+                    3. tripEnd()
+                    4. Splice()
+                    5. split()
+                    6. replace()
+                    7. replaceAll()
+                    8. toUpperCase()
+                    9. toLowerCase()
+
+    2. Non Primitive Data types (mutable in nature)
+        1. Arrays
+        2. Object 
+        3. Functions 
+
+
+1. Arrays : 
+------------
+    ->Arrays are the linear data structure used to store both homogenous and heterogenous type of data 
+
+    ->Arrays declaration : 
+        1. literal way 
+        2. using new keywords (constructor)
+
+
+
+    loops: 
+    -------
+        1. for loop  
+        2. while loop
+        3. do while loop 
+        4. for-of loop (to get the values)
+        5. for-in loop (to get the indexes)
+        6. forEach()
+
+
+        7. map() 
+        8. filter()
+        9. reduce()
+
+
+2. Object: 
+--------------
+    ->object are the real time entities used to data in form of key and value pair 
+    ->Object declaration : 
+        1. literal way 
+        2. using new keywords (constructor)
+
+
+        Curd operations : 
+        ---------
+    
+    Inbuilt functions in Object : 
+    -----------------------------
+        1. Object.keys()
+        2. Object.values()
+        3. Object.entries()
+        4. Object.seal()
+        5. Object.freeze() 
+
+
+Functions  /methods : 
+----------------------
+    ->functions are the block of statements which will get execute when ever we called 
+    ->Code reusability / code readability  / 
+
+        1. user define Functions 
+        2. predefine functions 
+
+
+        Types : 
+        --------
+            1. normal functions 
+            2. Arrow functions (ES 6 ) 
+            3. higher order functions 
+                ->any functions that will be accept another functions as parameter
+
+            4. callback function
+                ->any functions that will passed as a value to the higher function 
+
+
+
+
+JSON (javascript object notation)
+{
+    "name":"sai",
+    "salary":152005
+}
+
+
+DOM (Document object model):
+----------------------------
+
+
+Dom Events in 3 ways : 
+    1. attribute way 
+    2. property way 
+    3. addEventListener 
+
+
+fetch ()
+
+
+
+React JS: 
+----------
+    ->React Js is the small Javascript library 
+
+    React JS : 
+    ----------
+        ->React Js is the Component based 
+        ->We can build SPA (single page application)
+        ->we built using react js the application ->quick performance
+        ->React JS will support Virtual DOM 
+        ->In react Js they used Diffing 
+        ->Declarative in nature 
+
+
+React App SetUp : 
+-----------------
+
+CLI
+----
+    1. npx(node package executor)
+    2. npm (react+vite)         [node package manager]
+
+
+
+AJAX(asynchronous javascript and XML):
+------------------------------------- 
+
+
+
+JSX (javascript and XML ): 
+-------------------------------
+    ->jsx is similar to HTML 
+    ->JSX file Name starts with UpperCase
+    ->Jsx file will contains both HTMl ,JS 
+
+    ->JSX will support javascript expression -> { }
+    -> return keyword can not return   multiple tags  that will be return one tag (it support parent)
+
+    ->JSX will support empty fragments (<></>)
+
+
+
+Components in React js : 
+---------------------------
+    ->smallest UI(user interface ) blocks in the Screen/Webpage
+
+    ->Types  : 
+        1. Class Based Component (CBC)
+            ->any Components declare using class keywords 
+            ->CBC is also called as stateful Components
+            ->CBC states are present 
+            ->super keyword , this keyword and constructor is present 
+            ->life cycle methods present
+
+
+        2. function Based Component(FBC)
+            ->any Components declare using function keywords 
+            ->FBC is also called as stateless Components
+            ->FBC states are not present 
+            ->super keyword , this keyword and constructor is  not present 
+            ->life cycle methods also not  present

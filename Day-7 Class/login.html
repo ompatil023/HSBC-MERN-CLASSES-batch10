@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <label for="">Username :</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <br><br>
+            <label for="">Password :</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <br><br>
+            <button type="submit">Login</button>
+            <button type="reset">Cancel</button>
+        </fieldset>
+    </form>
+
+    <script>
+        let username = document.getElementById('username');
+        let password = document.getElementById('password');
+
+        let form = document.querySelector("form")
+        let body = document.querySelector("body")
+
+        form.onsubmit = (e) => {
+            e.preventDefault()
+            console.log(username.value);
+            console.log(password.value);
+            body.style.backgroundColor=`#${Math.floor(Math.random()*100000)}`
+            console.log(Math.floor(Math.random()*100000));
+            
+
+        }
+    </script>
+</body>
+
+</html>
